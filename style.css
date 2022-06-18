@@ -1,0 +1,39 @@
+body {
+    background-color: #09c6f9;
+}
+section {
+    width: 40rem;
+    max-width: 100%;
+    margin: 2rem auto;
+    border: 1px solid rgb(12, 54, 145);
+    padding: 1.5rem;
+  }
+html { 
+    color: rgb(255, 255, 255);
+}
+
+button {
+    display: block;
+    border: 1px solid #000041;
+    color: white;
+    background: #00b5e7;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+button:hover {
+  background: #068fb4;
+  border-color: #12128a;
+}
+.character {
+    margin: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+    margin: 15px 50px 0px 0px;
+    text-align: left; 
+    list-style: none;
+}
+img{
+    width: 120px;
+}

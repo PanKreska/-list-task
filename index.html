@@ -1,19 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <div class="main">
-        <p>Baza Postaci</p> 
-        <div class="list">
-            <li></li>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Lista postaci Rick&Morty</title>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <template id="singleChar">
+                <li class="character">
+                    <header>
+                        <h2>Name</h2>
+                      </header>
+                        <article>
+                            <p></p>
+                            <span1></span1>
+                            <span2></span2>
+                            <span3></span3>
+                            <span4></span4>
+                        </article>
+            </template>
+            <section id="characterLive">
+                <button id="btn">LISTA POSTACI RICK & MORTY</button>
+                <ul class="characters"></ul>
+            </section>
         </div>
-    </div>
-    
-</body>
+    </body>
 </html>
