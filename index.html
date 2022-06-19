@@ -14,18 +14,38 @@
             <template id="singleChar">
                 <li class="character">
                     <header>
-                        <h2>Name</h2>
+                        <h2 class="name"></h2>
                       </header>
                         <article>
-                            <p></p>
-                            <span1></span1>
-                            <span2></span2>
-                            <span3></span3>
+                            <span class="status"></span></br>
+                            <span1 class="spacies"></span1></br>
+                            <span2></span2></br>
+                            <span3></span3></br>
                             <span4></span4>
                         </article>
             </template>
             <section id="characterLive">
-                <button id="btn">LISTA POSTACI RICK & MORTY</button>
+                <button id="btn" class="btn">LISTA POSTACI RICK & MORTY</button>
+                <input id="search" placeholder="Wpisz imię lub nazwisko aby wyszukać postać">
+                <fieldset>
+                    <legend>Wyszukaj postać po parametrze: </legend>
+                    <div class="in">
+                            <select id="choosevalue">
+                                <optgroup label="Status">
+                                    <option value="status: Alive">Alive</option>
+                                    <option value="status: Dead">Dead</option>
+                                    <option value="status: unknown">Unknown</option>
+                                  </optgroup>
+                                  <optgroup label="Spacies">
+                                    <option value="species: Human">Human</option>
+                                    <option value="species:  Alien">Alien</option>
+                                  </optgroup>
+                              </select>
+                    </div>
+                      <button id="field">Szukaj</button>
+                    </div>
+                </fieldset>
+                
                 <ul class="characters"></ul>
             </section>
         </div>

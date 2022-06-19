@@ -1,18 +1,35 @@
 body {
     background-color: #09c6f9;
 }
+
 section {
-    width: 40rem;
+    width: 45rem;
     max-width: 100%;
     margin: 2rem auto;
     border: 1px solid rgb(12, 54, 145);
     padding: 1.5rem;
   }
+
 html { 
     color: rgb(255, 255, 255);
 }
+#field{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: #00b5e7;
+    border: 1px solid #000041;
+}
+#field:hover {
+    background: #09627a;
+    border-color: #12128a;
+  }
+select{
+    display: block;
+    margin: 0 auto;
+}
 
-button {
+#btn {
     display: block;
     border: 1px solid #000041;
     color: white;
@@ -21,10 +38,26 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
-button:hover {
-  background: #068fb4;
+
+#btn:hover {
+  background: #09627a;
   border-color: #12128a;
+}
+input{
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.85);
+    border: 1px solid #000041;
+}
+::-webkit-input-placeholder {
+    text-align: center;
 }
 .character {
     margin: 1rem 0;
@@ -34,6 +67,16 @@ button:hover {
     text-align: left; 
     list-style: none;
 }
+h2{
+    margin-bottom: 5px;
+}
 img{
     width: 120px;
+    margin-top: 15px;
+}
+fieldset{
+    margin: 0 auto;
+    width: 250px;
+    border: 1px solid #000041;
+    padding: 10px 10px 10px 20px;
 }
