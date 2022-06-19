@@ -7,8 +7,6 @@ const chooseInput = document.getElementById("choosevalue");
 let xhr;
 let userChooseInput;
 
-
-console.log(userChooseInput);
 const showCharacters = () => {
 xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://rickandmortyapi.com/api/character');
@@ -37,18 +35,15 @@ xhr.send();
 }
 
 const checkcheckbox = () => {
-    let listOfLi = document.getElementsByClassName('character');
     let userChooseInput = chooseInput.value;
     arrayStatus = Array.from(statut);
-    arraySpacies = Array.from(spacies);
-    arrayCheckbox = arrayStatus.concat(arraySpacies);
-    for (const char of arrayCheckbox){
-        if(char.textContent.toLowerCase() === userChooseInput.toLowerCase()) {
-            char.parentNode.parentNode.style.display = 'block';
-            } 
-            if(char.parentNode.parentNode.style.display != 'block'){char.parentNode.parentNode.style.display = 'none';
-            console.log(char.parentNode.parentNode);
-    }   }
+    arrayStatus.forEach( el => {
+        if(el.textContent.toLowerCase() === userChooseInput.toLowerCase()) {
+            el.parentNode.parentNode.style.display = 'block';
+        } else {
+            el.parentNode.parentNode.style.display = 'none';
+        }
+    })
 };
 
 const searchCharacter = e => {
@@ -61,7 +56,9 @@ const searchCharacter = e => {
         }
     })
 }
+
 search.addEventListener('keyup', searchCharacter);
 
 Btn.addEventListener('click', function(){if(xhr === undefined){showCharacters()}});
+
 BtnParameters.addEventListener('click', checkcheckbox);
